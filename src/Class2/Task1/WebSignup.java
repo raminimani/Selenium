@@ -13,9 +13,9 @@ public class WebSignup {
 
         driver.navigate().to("https://parabank.parasoft.com/parabank/register.htm;jsessionid=B8DD31FF0AFEDBDF4454B27BBC5C05B0%22");
 
-        driver.findElement(By.name("customer.firstName")).sendKeys("Ramin");
+        driver.findElement(By.name("customer.firstName")).sendKeys("Sarah");
         Thread.sleep(2000);
-        driver.findElement(By.name("customer.lastName")).sendKeys("Imani");
+        driver.findElement(By.name("customer.lastName")).sendKeys("Angel");
         Thread.sleep(2000);
         driver.findElement(By.name("customer.address.street")).sendKeys("14567 Brocklyn St");
         Thread.sleep(2000);
@@ -29,7 +29,7 @@ public class WebSignup {
         Thread.sleep(2000);
         driver.findElement(By.name("customer.ssn")).sendKeys("012-10-2432");
         Thread.sleep(2000);
-        driver.findElement(By.name("customer.username")).sendKeys("raminimani");
+        driver.findElement(By.name("customer.username")).sendKeys("SarahAngel");
         Thread.sleep(2000);
         driver.findElement(By.name("customer.password")).sendKeys("Ghk004@12");
         Thread.sleep(2000);
@@ -37,11 +37,11 @@ public class WebSignup {
         Thread.sleep(2000);
         driver.findElement(By.className("button")).click();
         Thread.sleep(2000);
-        driver.findElement(By.name("username")).sendKeys("raminimani");
+        driver.findElement(By.name("username")).sendKeys("SarahAngel");
         Thread.sleep(2000);
         driver.findElement(By.name("password")).sendKeys("Ghk004@12");
         Thread.sleep(2000);
-        driver.findElement(By.className("button")).click();
+        driver.findElement(By.xpath("//input[@value='Log In']")).click();
 
     }
 }
